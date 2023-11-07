@@ -143,6 +143,16 @@ header h3{
   gap: 3px;
 }
 
+.input-selesai{
+    background-color: transparent;
+}
+
+#input-selesai{
+    width: 3vh;
+    height: 3vh;
+    accent-color: rgb(241, 180, 187);
+}
+
 .inputbox{
   background-color: rgb(253, 240, 240);
   padding: 10px;
