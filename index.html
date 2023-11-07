@@ -18,53 +18,99 @@
             <input
               type="search"
               class="search"
-              placeholder="Cari Buku di Sini..."
+              placeholder="Search book title here..."
+              id="search-input"
             />
-            <button class="search-button">Search</button>
+            <button class="search-button" id="search-button">Search</button>
           </div>
         </header>
-        <div class="list-buku">
-          <div class="list-dibaca">
-
+        <div class="lists">
+          <div class="list uncompleted-list">
+            <h1>Uncompleted Books</h1>
+            <div class="list-books" id="uncompleted-list"></div>
           </div>
-          <div class="list-belum-dibaca">
-
+          <div class="list completed-list">
+            <h1>Completed Books</h1>
+            <div class="list-books" id="completed-list"></div>
           </div>
         </div>
       </div>
-      <div class="add-user">
-        <form class="form" id="form">
-          <h1>Tambahkan Buku</h1>
-          <div class="input input-judul">
-            <label for="input-judul">Judul</label>
+      <div class="forms">
+        <form class="form" id="add-form" style="display: flex">
+          <h1 id="form-title">Add a New Book</h1>
+          <div class="input input-title">
+            <label for="input-title">Title</label>
             <input
               class="inputbox"
               type="text"
-              id="input-judul"
-              placeholder="Masukkan Judul Buku"
+              id="input-title"
+              placeholder="Type Title Here..."
             />
           </div>
-          <div class="input input-penulis">
-            <label for="input-penulis">Penulis</label>
+          <div class="input input-author">
+            <label for="input-author">Author</label>
             <input
               class="inputbox"
               type="text"
-              id="input-penulis"
-              placeholder="Masukkan Nama Penulis"
+              id="input-author"
+              placeholder="Type Author Here..."
             />
           </div>
-          <div class="input input-tahun">
-            <label for="input-tahun">Tahun</label>
+          <div class="input input-year">
+            <label for="input-year">Year</label>
             <input
               class="inputbox"
               type="number"
-              id="input-tahun"
-              placeholder="Masukkan Tahun"
+              id="input-year"
+              placeholder="Type Year Here..."
             />
           </div>
-          <div class="input input-selesai">
-            <input type="checkbox" name="input-selesai" id="input-selesai">
-            <label for="input-selesai">Sudah Dibaca</label>
+          <div class="input input-completed">
+            <input
+              type="checkbox"
+              name="input-completed"
+              id="input-completed"
+            />
+            <label for="input-completed">Completed</label>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+        <form class="form" id="edit-form" style="display: none">
+          <h1 id="form-title">Edit Book</h1>
+          <div class="input input-title">
+            <label for="input-title-edit">Title</label>
+            <input
+              class="inputbox"
+              type="text"
+              id="input-title-edit"
+              placeholder="Type Title Here..."
+            />
+          </div>
+          <div class="input input-author">
+            <label for="input-author-edit">Author</label>
+            <input
+              class="inputbox"
+              type="text"
+              id="input-author-edit"
+              placeholder="Type Author Here..."
+            />
+          </div>
+          <div class="input input-year">
+            <label for="input-year-edit">Year</label>
+            <input
+              class="inputbox"
+              type="number"
+              id="input-year-edit"
+              placeholder="Type Year Here..."
+            />
+          </div>
+          <div class="input input-completed">
+            <input
+              type="checkbox"
+              name="input-completed"
+              id="input-completed-edit"
+            />
+            <label for="input-selesai">Completed</label>
           </div>
           <button type="submit">Submit</button>
         </form>
